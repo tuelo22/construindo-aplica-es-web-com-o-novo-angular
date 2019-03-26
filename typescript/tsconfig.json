@@ -1,0 +1,6 @@
+{
+   "compilerOptions":{
+       "outDir":"dist",
+       "noEmitOnError": true // padrão é false e não compila o ts  caso tenha erro do ts / js
+   } 
+}
