@@ -1,6 +1,16 @@
-<div>
-  Student: {{student.name}}
-   <div [hidden]="!student.isJedi">
-      Jedi Template: {{student.temple}}
+<div *ngIf="student">
+  Student: <a (click)>{{student?.name}}
+   <div *ngIf="student.isJedi">
+      Jedi Template: {{student?.temple}}
    </div>
 </div>
+<p *ngIf="!student">
+   Casa da mãe joana !!
+
+</p>
+
+
+<!----
+
+   Se não passar o estudande não leita = colocar ? na frente
+------>
